@@ -1,0 +1,32 @@
+<app-header  titulo="accordion" ></app-header>
+
+<ion-content>
+  <ion-accordion-group class="ion-padding" #accordionGroup (ionChange)="accordionGroupChange($event)">
+    <ion-accordion value="first"  toggleIcon="caret-down-circle"> 
+      <ion-item slot="header" color="light">
+        <ion-label>First Accordion</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">First Content</div>
+    </ion-accordion>
+    <ion-accordion value="second"  toggleIcon="caret-down-circle">
+      <ion-item slot="header" color="light">
+        <ion-label>Second Accordion</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Second Content</div>
+    </ion-accordion>
+    <ion-accordion value="third"  toggleIcon="caret-down-circle">
+      <ion-item slot="header" color="light">
+        <ion-label>Third Accordion</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Third Content</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <p #listenerOut class="ion-padding"></p>
+
+
+  <ion-button (click)="toggleAccordion()" class="ion-padding" expand="block">Toggle Second Accordion</ion-button>
+  
+
+ 
+</ion-content>

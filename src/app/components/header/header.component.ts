@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +10,13 @@ export class HeaderComponent  implements OnInit {
 
   @Input() titulo : string = '';
 
-  constructor() { }
+  constructor(private menuCtrl: MenuController) { }
 
   ngOnInit() {}
+
+
+  mostrarMenu(){
+    this.menuCtrl.open('first');
+  }
 
 }

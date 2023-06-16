@@ -70,6 +70,18 @@ const routes: Routes = [
   {
     path: 'icon',
     loadChildren: () => import('./pages/icon/icon.module').then( m => m.IconPageModule)
+  },
+  {
+    path: 'item',
+    loadChildren: () => import('./pages/item/item.module').then( m => m.ItemPageModule)
+  },
+  {
+    path: 'item-divider',
+    loadChildren: () => import('./pages/item-divider/item-divider.module').then( m => m.ItemDividerPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   }
 
 ];

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 interface Componente {
   icon : string,
@@ -85,9 +86,24 @@ export class InicioPage implements OnInit {
       redirectTo: '/infinite-scroll'
     },
     {
+      icon: 'text-outline',
+      name: 'input',
+      redirectTo: '/input'
+    },
+    {
       icon: 'fish-outline',
       name: 'icon',
       redirectTo: '/icon'
+    },
+    {
+      icon: 'american-football-outline',
+      name: 'item',
+      redirectTo: '/item'
+    },
+    {
+      icon: 'folder-open-outline',
+      name: 'item divider',
+      redirectTo: '/item-divider'
     }
 
 
@@ -95,9 +111,13 @@ export class InicioPage implements OnInit {
 
   ];
 
-  constructor() { }
+  constructor(private menuCtrl: MenuController) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+
+  mostrarMenu(){
+    this.menuCtrl.open('first');
   }
 
 }

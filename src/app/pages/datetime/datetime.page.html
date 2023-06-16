@@ -1,0 +1,55 @@
+<app-header titulo="Date time"></app-header>
+
+<ion-content>
+
+  <div class="ion-padding">
+    <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true" class="ion-padding">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>
+      </ng-template>
+    </ion-modal>
+  </div>
+
+  <div class="ion-padding">
+    <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-05-31T23:59:59"
+    class="ion-padding"></ion-datetime>
+  </div>
+
+  <div class="ion-padding">
+    <ion-datetime minuteValues="0,15,30,45" dayValues="5,10,15,20,25,30" class="ion-padding"></ion-datetime>
+  </div>
+  <div class="ion-padding">
+    <ion-datetime [isDateEnabled]="isWeekday" class="ion-padding"></ion-datetime>
+
+  </div>
+  <div class="ion-padding">
+    <ion-datetime presentation="month-year"></ion-datetime>
+
+  </div>
+  <div class="ion-padding">
+    <ion-datetime presentation="time"></ion-datetime>
+
+  </div>
+  <div class="ion-padding">
+    <ion-datetime>
+      <span slot="title">Select a Reservation Date</span>
+    </ion-datetime>
+  </div>
+
+
+  
+
+ 
+
+  
+
+
+
+
+
+  
+
+
+</ion-content>

@@ -30,6 +30,46 @@ const routes: Routes = [
   {
     path: 'breadcrumb',
     loadChildren: () => import('./pages/breadcrumb/breadcrumb.module').then( m => m.BreadcrumbPageModule)
+  },
+  {
+    path: 'button',
+    loadChildren: () => import('./pages/button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./pages/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./pages/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./pages/chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
+  {
+    path: 'picker',
+    loadChildren: () => import('./pages/picker/picker.module').then( m => m.PickerPageModule)
+  },
+  {
+    path: 'fab',
+    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'infinite-scroll',
+    loadChildren: () => import('./pages/infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
+  },
+  {
+    path: 'icon',
+    loadChildren: () => import('./pages/icon/icon.module').then( m => m.IconPageModule)
   }
 
 ];
